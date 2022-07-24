@@ -1,0 +1,34 @@
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+a:link {
+  text-decoration: none;
+}
+
+.search-area {
+  margin-left: 150px;
+}
+.form-control {
+  margin: 20px;
+}
+.btn-primary {
+  margin: 20px;
+}
+.btn-secondary {
+  margin: 20px;
+}
+.today {
+  margin-top: 20px;
+}
+.forecast {
+  margin-top: 20px;
+}
+.temperatureNow {
+  font-size: 24px;
+  font-weight: 700;
+}
+.unit {
+  vertical-align: super;
+  font-size: medium;
+}

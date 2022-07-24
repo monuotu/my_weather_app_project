@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+<div class="search-area">
+        <form id="city-input">
+                  <div class="row" >
+          <div class="col -6">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Type  City ..."
+              id="city-name-input"
+            />
+                 </div>
+          <div class="col -4">
+            <input type="submit" class="btn btn-primary" value="Search" />
+          </div>
+          <div class = "col-2">
+          <button type="button" class="btn btn-secondary">Current Location</button>
+          </div>
+          </div>
+        </form>
+      </div>
+      </div>
+      <h1>Toronto</h1>
+  <div class="today">
+      <div class="d-flex justify-content-center">
+        <div class="card border-dark mb-3" style="max-width: 18rem">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/sun.png"
+                class="img-fluid rounded-start"
+                alt="sun"
+                width="100px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" id = "date">Today</h5>
+                <p ><span class="temperatureNow">18 </span><span class = "unit">
+                  <a href ="#" id = celcius_unit> °C</a> | 
+                <a href ="#" id = fahrenheit_unit> °F</a> 
+              </span></p>
+                <span>  <small class="text-muted">Last updated 3 mins ago</small>
+           </span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+      <div class="forecast">
+        <div class="card border-dark mb-3">
+          <div class="row">
+            <div class="col-2">Sun</div>
+            <div class="col-2">Mon</div>
+            <div class="col-2">Tue</div>
+            <div class="col-2">Wed</div>
+            <div class="col-2">Thu</div>
+            <div class="col-2">Fri</div>
+          </div>
+          <div class="row">
+            <div class="col-2"><img src="img/wind.png" /></div>
+            <div class="col-2"><img src="img/rain.png" /></div>
+            <div class="col-2"><img src="img/sun-rain.png" /></div>
+            <div class="col-2"><img src="img/sun.png" /></div>
+            <div class="col-2"><img src="img/sun.png" /></div>
+            <div class="col-2"><img src="img/thunder-storm.png" /></div>
+          </div>
+          <div class="row">
+            <div class="col-2"><h5>10°C/15°C</h5></div>
+            <div class="col-2"><h5>10°C/15°C</h5></div>
+            <div class="col-2"><h5>10°C/15°C</h5></div>
+            <div class="col-2"><h5>10°C/15°C</h5></div>
+            <div class="col-2"><h5>10°C/15°C</h5></div>
+            <div class="col-2"><h5>10°C/15°C</h5></div>
+          </div>
+        </div>
+      </div>
+    </div>
+<script src="src/index.js"></script>
+  </body>
+</html>
