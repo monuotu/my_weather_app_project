@@ -5,6 +5,9 @@ h1 {
 a:link {
   text-decoration: none;
 }
+p {
+  text-align: center;
+}
 
 .search-area {
   margin-left: 150px;
